@@ -200,3 +200,9 @@ div, img {
         text-align: start !important;
     }
 }
+
+.d-grid-4 img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
