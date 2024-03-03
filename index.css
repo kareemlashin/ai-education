@@ -27,7 +27,7 @@ header {
     padding: 60px !important;
     color: #fff;
     min-height: 100vh;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     background: url(./images/banner-background.png);
@@ -35,6 +35,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+header img {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -52,11 +58,9 @@ nav h1 {
 
 }
 
-.d-flex {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+main section {
+    padding: 20px !important;
 }
 
 .px-30 {
@@ -64,26 +68,7 @@ nav h1 {
     padding-inline-end: 30px;
 }
 
-.max-40 {
-    max-width: 50%;
-    text-align: start !important;
-}
 
-main section {
-    padding: 60px !important;
-}
-
-img {
-    width: 25%;
-
-}
-
-.w-img {
-    width: 40%;
-    height: 400px;
-    text-align: center;
-    display: flex;
-}
 
 .w-img-s {
     align-items: start !important;
@@ -104,10 +89,10 @@ img {
 section h2 {
     padding-bottom: 5px !important;
     border-bottom: 2px solid #4963A7;
-    width: 20%;
     margin: auto !important;
     margin-bottom: 40px !important;
     color: #4963A7;
+    max-width: 70% !important;
 }
 
 section p {
@@ -136,13 +121,7 @@ ul li {
 }
 
 /* Define the grid container */
-.d-grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 columns with equal width */
-    gap: 20px;
-    /* Spacing between grid items */
-}
+
 
 /* Style grid items (columns) */
 .d-grid-4>* {
@@ -155,6 +134,7 @@ ul li {
     /* Gray border */
     border-radius: 8px;
     /* Rounded corners */
+    margin-bottom: 15px !important;
 
 }
 
@@ -174,4 +154,49 @@ ul li {
 
 div, img {
     overflow: hidden !important;
+}
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+    }
+
+    .d-grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns with equal width */
+        gap: 20px;
+        /* Spacing between grid items */
+    }
+
+    .d-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section h2 {
+        width: 20%;
+    }
+
+    .w-img {
+        width: 40%;
+        height: 400px;
+        text-align: center;
+        display: flex;
+    }
+
+    main section {
+        padding: 60px !important;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    .max-40 {
+        max-width: 50%;
+        text-align: start !important;
+    }
 }
