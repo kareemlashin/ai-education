@@ -1,0 +1,177 @@
+body {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body, html, * {
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    direction: rtl;
+    text-align: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 60px !important;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/banner-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+nav h1 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+}
+
+.d-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.px-30 {
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+}
+
+.max-40 {
+    max-width: 50%;
+    text-align: start !important;
+}
+
+main section {
+    padding: 60px !important;
+}
+
+img {
+    width: 25%;
+
+}
+
+.w-img {
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+}
+
+.w-img-s {
+    align-items: start !important;
+}
+
+.w-img-e {
+    align-items: end !important;
+
+}
+
+.w-img img {
+
+    width: 100%;
+    object-fit: contain;
+    height: 399px;
+}
+
+section h2 {
+    padding-bottom: 5px !important;
+    border-bottom: 2px solid #4963A7;
+    width: 20%;
+    margin: auto !important;
+    margin-bottom: 40px !important;
+    color: #4963A7;
+}
+
+section p {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+section ol {
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
+li {
+    display: list-item;
+}
+
+li {
+    padding-inline-start: 10px !important;
+    list-style: disc !important;
+    display: list-item !important;
+    margin-inline-start: 1em !important;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+/* Define the grid container */
+.d-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns with equal width */
+    gap: 20px;
+    /* Spacing between grid items */
+}
+
+/* Style grid items (columns) */
+.d-grid-4>* {
+    /* Add styles to individual grid items */
+    background-color: #ffffff !;
+    /* White background */
+    padding: 20px !important;
+    /* Padding around grid items */
+    border: 1px solid #dddddd;
+    /* Gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+
+}
+
+.testimonial-section {
+    background-color: #eafcfe;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 109px 0 112px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mt-20 {
+    margin-top: 25px !important;
+}
+
+div, img {
+    overflow: hidden !important;
+}
